@@ -1,0 +1,53 @@
+# Arduino / ESP32 project .gitignore
+
+# ===== THÔNG TIN BÍ MẬT — KHÔNG BAO GIỜ COMMIT / 機密資訊——絕對不要提交 =====
+# Nếu bạn lỡ hardcode WiFi/token vào file, hãy đổi credentials ngay!
+# 若您不小心將 WiFi/token 寫入程式碼，請立即更換憑證！
+secrets.h
+config_private.h
+credentials.h
+
+# ===== Arduino build artifacts =====
+build/
+*.elf
+*.bin
+*.hex
+*.map
+
+# ===== Arduino IDE / PlatformIO =====
+.pio/
+.pioenvs/
+.piolibdeps/
+.vscode/
+*.code-workspace
+
+# ===== OS files =====
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ===== Backup files / Các file sao lưu =====
+*.bak
+*.orig
+*.tmp
+*.swp
+*_backup.*
+
+# ===== Log files / File log =====
+*.log
+
+# ===== IDE settings (tùy chọn giữ lại / 可選擇保留) =====
+# Bỏ comment dòng dưới nếu muốn bỏ qua thư mục .vscode
+# 取消以下注釋以忽略 .vscode 資料夾
+# .vscode/
